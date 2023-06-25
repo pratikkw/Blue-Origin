@@ -1,0 +1,109 @@
+.title-primary {
+  font-weight: 800;
+}
+
+.title-secondary {
+  hyphens: auto;
+  font-weight: 100;
+}
+
+.title-third {
+  font-size: calc(20rem / 16);
+  font-weight: 700;
+}
+
+.title-des {
+  line-height: 2;
+  text-transform: none;
+  font-size: calc(16rem / 16);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.mg-top-small {
+  margin-top: 1rem;
+}
+
+.mg-top-medium {
+  margin-top: 2rem;
+}
+
+.mg-top-large {
+  margin-top: 2rem;
+}
+
+.mg-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.mg-bottom-small-2 {
+  margin-bottom: 1.5rem;
+}
+
+.mg-bottom-medium {
+  margin-bottom: 2rem;
+}
+
+.mg-bottom-large {
+  margin-bottom: 2rem;
+}
+
+.modify-1 {
+  font-size: calc(34rem / 16);
+}
+
+// BTN
+.btn {
+  border: 1px solid var(--border-clr, #fff);
+}
+
+.btn--1 {
+  padding: 0.8rem 3rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.btn--blue {
+  --border-clr: #0033dd;
+  background-color: #0033dd;
+  padding: 1rem 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.lang__btn {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+}
+
+// LINK
+.link {
+  position: relative;
+  --hover-color: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+
+  &::before {
+    content: "";
+    font-weight: 400;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 0;
+    height: 2.5px;
+    background-color: var(--hover-color, #fff);
+    transition: all 0.3s;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}

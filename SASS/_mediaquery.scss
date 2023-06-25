@@ -1,0 +1,75 @@
+@media only screen and (min-width: 37.5em) {
+  .heropage {
+    grid-template-rows: 100vh;
+
+    &__bk {
+      display: none;
+    }
+
+    &__text {
+      grid-row: 1;
+      background-color: transparent;
+      margin: auto 0;
+    }
+
+    &__text-middle {
+      margin: auto;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 62.5em) {
+  .header {
+    &__logo {
+      margin-right: auto;
+    }
+
+    &__nav {
+      display: flex;
+    }
+  }
+
+  .social-media {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 20% 35%;
+    gap: 1.5rem;
+
+    &__legal-hide {
+      display: none;
+    }
+
+    &__legal-hide-2 {
+      display: block;
+    }
+
+    &__logo-box {
+      justify-self: center;
+      padding: 5rem 4rem;
+      border-right: 1px solid #464646;
+    }
+
+    &__logo {
+      border: none;
+    }
+
+    &__links {
+      align-items: flex-start;
+    }
+
+    &__legal {
+      padding: 0;
+      text-align: start;
+    }
+
+    &__policy {
+      justify-content: flex-start;
+      gap: 1.5rem;
+    }
+  }
+}
