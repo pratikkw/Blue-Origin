@@ -25,7 +25,7 @@
   &__menu {
     margin-left: 2rem;
     position: relative;
-    z-index: 10;
+    z-index: 9999;
   }
 
   &__check {
@@ -79,11 +79,10 @@
 .slider {
   position: fixed;
   overflow-y: scroll;
-  top: 0;
-  left: 0;
+  z-index: 50;
+  inset: 0;
   background-color: #2a2a2a;
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
   padding: 0 2.5rem;
   transform: translateX(100%);
   transition: transform 0.3s;
@@ -240,7 +239,7 @@
     background-color: #2a2a2a;
     color: #d8d8d8;
     line-height: 1.5;
-    padding: 3.5rem 3rem;
+    padding: 3.5rem 2rem;
     font-size: 1.1rem;
     font-weight: 300;
   }
@@ -297,4 +296,15 @@
   &__legal-hide-2 {
     display: none;
   }
+}
+
+.slider-shadow {
+  position: fixed;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.85);
+  display: none;
+}
+
+.slider-shadow--active {
+  display: block;
 }
