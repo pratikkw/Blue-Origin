@@ -252,8 +252,7 @@
   margin-bottom: 2rem; }
 
 .modify-1 {
-  font-size: calc(20rem / 16);
-  display: none; }
+  font-size: calc(28rem / 16); }
 
 .btn {
   border: 1px solid var(--border-clr, #fff); }
